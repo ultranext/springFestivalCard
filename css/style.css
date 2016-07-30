@@ -98,11 +98,11 @@ transform:rotate(0deg)}
 	@keyframes fu{0%{-webkit-transform:rotate(0deg); transform:rotate(0deg)}
 	100%{-webkit-transform:rotate(360deg); transform:rotate(360deg)}}
 #page1 > .p1_lantern{position:absolute;
-top:-3.4%;
+top:0;
 right:0;
 left:0;
 margin:auto;
-background:url(../images/p1_lantern.png) no-repeat center bottom;
+background:url(../images/p1_lantern.png) no-repeat center center;
 background-size:100%;
 width:45vw;
 height:71.2vh;
@@ -116,7 +116,7 @@ padding-top:31vh;
 100%{opacity:1; -webkit-transform:scale(1,1); transform:scale(1,1)}}
 @keyframes lantern{0%{opacity:.5; -webkit-transform:scale(0.8,0.8); transform:scale(.8,.8)}
 100%{opacity:1; -webkit-transform:scale(1,1); transform:scale(1,1)}}
-#page1 > .p1_lantern:before{animation:lantern 2s ease-in-out infinite;content:"";border-radius:50%;opacity:.5;position:absolute;top:0;right:0;
+#page1 > .p1_lantern:before{-webkit-animation:lantern 2s ease-in-out infinite;animation:lantern 2s ease-in-out infinite;content:"";border-radius:50%;opacity:.5;position:absolute;top:0;right:0;
 bottom:0;left:0;width:30vw;margin:auto;height:30vw;background:#d60b3b;-webkit-box-shadow:0 0 10vw 10vw #d60b3b;box-shadow:0 0 10vw 10vw #d60b3b }
 #page1 > .p1_imooc{background-size
 :100%;position:absolute;right:0;left:0;bottom:9vh;width:27.656vw;background: url(../images/p1_imooc.png) no-repeat center center;height:18.63vh;margin:auto;}
