@@ -52,13 +52,16 @@ transform:rotate(0deg)}
 	}
 	#page1 > .bg{background:url(../images/p1_bg.jpg);background-size:100%}
 	#page1{display:block;}
+	
 	#page2{display:none;-webkit-transition:2s; transition:2s;}
 	#page3{display:none;-webkit-transition:2s; transition:2s;top:100%;}
-	#page3.fadein{-webkit-animation:fadein 1s linear forwards;}
-	#page2.fadeout{-webkit-animation:fadein 1s linear forwards;/*opacity:0.3;-webkit-transform:translate(0,-100%);transform:translate(0,-100%);*/}
+	
+	#page3.fadein{-webkit-animation:fadein 1s linear forwards; animation:fadein 1s linear forwards; }
+	#page2.fadeout{-webkit-animation:fadein 1s linear forwards; animation:fadein 1s linear forwards;/*opacity:0.3;-webkit-transform:translate(0,-100%);transform:translate(0,-100%);*/}
 	#page2 > .p2_loading{z-index:4;-webkit-animation:loading 2s linear forwards;background:#ef1639;animation:loading 2s linear forwards;}
 	@-webkit-keyframes fadein{ 100%{-webkit-transform:translate(0,-100%);transform:translate(0,-100%);} }
 	/*//@-webkit-keyframes fadeout{ 100%{-webkit-transform:translate(0,-100%);transform:translate(0,-100%);} }*/
+	@keyframes fadein{ 100%{-webkit-transform:translate(0,-100%);transform:translate(0,-100%);} }
 	@keyframes loading{0%{opacity:1;} 100%{opacity:0}}
 	@-webkit-keyframes loading{0%{opacity:1;} 100%{opacity:0}} 
 	#page2 > .bg{background:url(../images/p2_bg.jpg);background-size:100%}
